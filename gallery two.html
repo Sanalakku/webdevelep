@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallerytwo.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="fblogo.png" class="facebook">
+        <p class="fbname">Facebook:Varalakshmi kudumbashrree</p>
+       <a href="https://www.kudumbashree.org/" target="_blank"><input type="button" value="know more" class="nav-button"></a>
+        <ul class="nav-ul">
+        <li class="nav-item"><a class="nav-link" href="feedback.html">feedback</a> </li>
+        <li class="nav-item"><a class="nav-link" href="about us.html">About us</a> </li>
+        <li class="nav-item-active"><a class="nav-link-active" href="#">Images</a> </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a> </li>
+        </ul>
+    </div>
+    <br>
+    <p class="heading">Image Gallery</p>
+    <div class="full-img" id="fullimgbox">
+        <img src="kudumbasree members.jpg" id="fullimg">
+        <span onclick="closefullimg()">x</span>
+    </div>
+    <div class="img-gallery">
+        <img src="kudumbasree members.jpg" onclick="openfullimg(this.src)">
+        <img src="kudumbashree members twocopy.jpg" onclick="openfullimg(this.src)">
+        <img src="kudumbashree works.jpeg" onclick="openfullimg(this.src)">
+        <img src="kudumbashree.1551681961.jpg" onclick="openfullimg(this.src)">
+        <img src="kudumbashree3.jpg" onclick="openfullimg(this.src)">
+        <img src="members three.jpg" onclick="openfullimg(this.src)">
+        <img src="work.jpg" onclick="openfullimg(this.src)">
+        <img src="artworkscopy.jpg" onclick="openfullimg(this.src)">
+        <img src="worktwo.jpg" onclick="openfullimg(this.src)">
+    </div>
+    <script>
+        var fullimgbox= document.getElementById("fullimgbox");
+        var fullimg= document.getElementById("fullimg");
+        function openfullimg(pic)
+        {
+            fullimgbox.style.display="flex";
+            fullimg.src=pic;
+        }
+        function closefullimg()
+        {
+            fullimgbox.style.display="none";
+        }
+            
+    </script>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <a name="Contactone"> <img src="intrologo2.png" class="logo" width="100"></a>
+                <p class="first">Varalakshmi kudumbashree</p>
+            </div>
+            <div class="col">
+                <h3>Address <div class="underline"><span></span></div></h3>
+                <p class="second">kunnappilly</p><br>
+                <p>meloor panchayath</p><br>
+                <p>chalakudy</p><br>
+                <p>kerala,pin:680311</p>
+                <p>mob:8592914583</p>
+            </div>
+            <div class="col">
+                <h2>Links <div class="underline"><span></span></div></h2>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="about us.html">about</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                    <li><a href="https://www.kudumbashree.org/">kudumbashree website</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>For more details  <div class="underline"><span></span></div></h3>
+                <form>
+                    <input type="email" placeholder="enter your e-mail id" required>
+                    <button type="submit">></button><br>
+                </form>
+                <a href="intro.html"><button type="submit" class="intropage">Intro page</button></a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@copyright</p>
+    </footer> 
+</body>
+</html>

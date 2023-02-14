@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kudumbashree Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log("I am ready");
+            alert("welcome to varalakshmi kudumbashree image gallery");
+            $(".thumb img").click(function(){
+                var imgSource = $(this).attr("src");
+                console.log(imgSource);   
+                $(".big-image").attr("src",imgSource);
+                });
+
+                $("#hide-btn").click(function(){
+                    $(".big-image").hide();
+                });
+
+                $("#show-btn").click(function(){
+                    $(".big-image").show();
+                });
+
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="head-nav">
+                <h1 class="heading">IMAGE COLLECTIONS</h1>
+            </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#galleryone">GALLERY</a></li>
+                    </ul>
+                </div>
+        </header>
+        <div id="body-container">
+            <button id="hide-btn">HIDE</button>
+            <button id="show-btn">SHOW</button>
+            <div class="image-container">
+                <img src="kudumbasree members.jpg" alt="KERALA TOURISM" class="big-image">
+            </div>
+            <div class="thum-container">
+                <div class="thumb-row">
+                    <div class="thumb">
+                        <img src="kudumbasree members.jpg" alt="KERALA HOUSE BOAT">
+                    </div>
+                    <div class="thumb">
+                    <img src="kudumbashree members two.jpg" alt="KERALA HOUSE BOAT">
+                    </div>
+                    <div class="thumb">
+                    <img src="members three.jpg" alt="KERALA HOUSE BOAT">
+                    </div>
+                    <div class="thumb">
+                    <img src="members four.jpg" alt="KERALA HOUSE BOAT">
+                </div>
+                <div class="thumb">
+                <img src="images/gallery/PT/05.jpg" alt="KERALA HOUSE BOAT">
+            </div>
+            <div class="thumb">
+               <a name="galleryone"><img src="images/gallery/PT/01.jpg" alt="KERALA HOUSE BOAT"></a>
+                </div>
+            </div>
+                </div>
+            </div>
+            <footer class="clearfix">
+                <p>THANK YOU</p>
+            </footer>
+    </div>
+
+</body>
+</html>
